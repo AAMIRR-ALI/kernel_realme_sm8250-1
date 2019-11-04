@@ -114,6 +114,7 @@
 #endif
 		.endm
 
+<<<<<<< HEAD
 		.macro	be32tocpu, val, tmp
 #ifndef __ARMEB__
 		/* convert to little endian */
@@ -122,6 +123,9 @@
 		.endm
 
 		.section ".start", #alloc, #execinstr
+=======
+		.section ".start", "ax"
+>>>>>>> 762d2dcd9e23 (ARM: 8933/1: replace Sun/Solaris style flag on section directive)
 /*
  * sort out different calling conventions
  */
