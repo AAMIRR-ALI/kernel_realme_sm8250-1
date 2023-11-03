@@ -140,4 +140,10 @@ kernel/configs/android-*.cfg
 build.sh
 out
 *.zip
+#
+#Ignoring Android.bp link file
+#
+Android.bp
 
+# KernelSU submodule
+KernelSU
