@@ -3805,13 +3805,8 @@ static void ffs_func_unbind(struct usb_configuration *c,
 	/* Drain any pending AIO completions */
 	drain_workqueue(ffs->io_completion_wq);
 
-<<<<<<< HEAD
 	if (!--opts->refcnt) {
 		ffs_event_add(ffs, FUNCTIONFS_UNBIND);
-=======
-	ffs_event_add(ffs, FUNCTIONFS_UNBIND);
-	if (!--opts->refcnt)
->>>>>>> 9a95fba9362a (usb: gadget: f_fs: Add unbind event before functionfs_unbind)
 		functionfs_unbind(ffs);
 	}
 
